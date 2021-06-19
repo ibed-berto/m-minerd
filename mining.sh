@@ -12,7 +12,7 @@ do
       
       mkdir minerd
       cd minerd
-      echo "\e[38;5;87mSedang mendownload Cpu Miner. \nPastikan koneksi internet anda stabil!\n"
+      echo "\e[38;5;87mSedang mendownload Cpu Miner. \nPastikan koneksi internet anda stabil\n"
 printf "\e[0m"
       wget https://github.com/ibed-berto/m-minerd/raw/main/pool01/cpuminer-linux.tar.gz 
       echo "\e[38;5;87mDownload Cpu Miner selesai!\n"
@@ -21,12 +21,11 @@ printf "\e[0m"
       rm cpuminer-linux.tar.gz -rf
       echo "\e[38;5;87mPenginstalan Cpu Miner selesai\n"
 printf "\e[0m"
-      exit
-      clear
       echo "\033[5;32mDefault penggunakan ikuti langkah di bawah ini : \n
       ./cpuminer-sse2 -a yescript -o (server pool) -u (wallet kalian) -p (password kalian) -t (jumlah cpu yang ingin anda gunakan) \n
 tulisan -a YESCRIPT di atas mengikuti algoritma mining kalian. Script di atas tanpa menggunakan tanda () artinya hapus tanda kurung saat memasukan scriptnya.\n"
 printf "\e[0m"
+      exit
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
       echo "\033[1;31mGood By.....!"
