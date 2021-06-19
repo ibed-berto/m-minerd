@@ -12,7 +12,7 @@ do
       echo "Sedang mendownload Cpu Miner....\n"
       mkdir minerd
       cd minerd
-      echo "\e[38;5;87mSedang mendownload Cpu Miner. Pastikan koneksi internet anda baik!\n"
+      echo "\e[38;5;87mSedang mendownload Cpu Miner. \nPastikan koneksi internet anda stabil!\n"
 printf "\e[0m"
       wget https://github.com/ibed-berto/m-minerd/raw/main/pool01/cpuminer-linux.tar.gz 
       echo "\e[38;5;87mDownload Cpu Miner selesai!\n"
@@ -20,9 +20,8 @@ printf "\e[0m"
       echo "\e[38;5;87mSedang mengexstact file\n"
       rm cpuminer-linux.tar.gz -rf
       echo "\e[38;5;87mPenginstalan Cpu Miner selesai\n"
+printf "\e[0m"
       exit
-cd
-rm mining.sh
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
       echo "\033[1;31mGood By.....!"
@@ -33,4 +32,6 @@ rm mining.sh
      echo "\e[0m"
      sleep 2
   fi
+rm mining.sh
+printf "\e[0m"
 done
