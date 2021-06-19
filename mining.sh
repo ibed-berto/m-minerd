@@ -5,7 +5,7 @@ masuk="y"
 while [ $masuk = "y" ]
 do
   clear
-  printf "\033[5;32mCpu Miner Installer\n\n"
+  echo "\033[5;32mCpu Miner Installer\n\n"
   echo -n "\e[38;5;87mApakah anda ingin melanjutkan untuk memasang Cpu Miner?\nDefault Y (Y/N) :\n "
   read yes;
   if [ $yes = "y" ]||[ $yes = "Y" ]
