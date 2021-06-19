@@ -9,7 +9,7 @@ do
   read yes;
   if [ $yes = "y" ]||[ $yes = "Y" ]
   then
-      echo "Sedang mendownload Cpu Miner....\n"
+      
       mkdir minerd
       cd minerd
       echo "\e[38;5;87mSedang mendownload Cpu Miner. \nPastikan koneksi internet anda stabil!\n"
@@ -22,6 +22,11 @@ printf "\e[0m"
       echo "\e[38;5;87mPenginstalan Cpu Miner selesai\n"
 printf "\e[0m"
       exit
+  clear
+echo "\033[1;31mDefault penggunakan ikuti langkah di bawah ini : \n
+./cpuminer-sse2 -a yescript -o (server pool) -u (wallet kalian) -p (password kalian) -t (jumlah cpu yang ingin anda gunakan) \n
+tulisan -a YESCRIPT di atas mengikuti algoritma mining kalian. Script di atas tanpa menggunakan tanda () artinya hapus tanda kurung saat memasukan scriptnya.\n"
+printf "\e[0m"
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
       echo "\033[1;31mGood By.....!"
@@ -32,6 +37,6 @@ printf "\e[0m"
      echo "\e[0m"
      sleep 2
   fi
-rm mining.sh
 printf "\e[0m"
+rm mining.sh
 done
