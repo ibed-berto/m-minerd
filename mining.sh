@@ -27,7 +27,6 @@ lalu masukan script ./cpuminer-sse2 -a yescript -o (server pool) -u (wallet kali
 tulisan -a YESCRIPT di atas mengikuti algoritma mining kalian. Script di atas tanpa menggunakan tanda () artinya hapus tanda kurung saat memasukan scriptnya.\n\n"
 printf "\e[0m"
 
-then
 rm mining.sh
 
       exit
