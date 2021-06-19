@@ -22,6 +22,8 @@ do
       echo "\e[0m \x1b[38;5;87mSedang mengexstact file"
       rm cpuminer-linux.tar.gz -rf
       echo "\e[0m \x1b[38;5;87mPenginstalan Cpu Miner selesai"
+      rm mining.sh
+      clear
       exit
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
