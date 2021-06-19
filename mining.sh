@@ -26,10 +26,10 @@ Masuk ke folder (cd minerd)\n
 lalu masukan script ./cpuminer-sse2 -a yescript -o (server pool) -u (wallet kalian) -p (password kalian) -t (jumlah cpu yang ingin anda gunakan) \n
 tulisan -a YESCRIPT di atas mengikuti algoritma mining kalian. Script di atas tanpa menggunakan tanda () artinya hapus tanda kurung saat memasukan scriptnya.\n\n"
 printf "\e[0m"
-
+exit
 rm mining.sh
 
-      exit
+      
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
       echo "\033[1;31mGood By.....!"
