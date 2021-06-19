@@ -1,26 +1,27 @@
 #!/bin/sh
 
-aku=Cpu Miner
 masuk="y"
 while [ $masuk = "y" ]
 do
   clear
-  printf "\033[5;32m[${aku}] Installer\n\n"
+  echo "\033[5;32mCpu Miner Installer\n\n"
   echo -n "\e[38;5;87mApakah anda ingin melanjutkan untuk memasang Cpu Miner?\nDefault Y (Y/N) :\n "
   read yes;
   if [ $yes = "y" ]||[ $yes = "Y" ]
   then
-      printf "Sedang menginstall ....\n"
+      echo "Sedang mendownload Cpu Miner....\n"
       mkdir minerd
       cd minerd
-      printf "\e[38;5;87mSedang mendownload $aku. Pastikan koneksi internet anda baik!!!\n"
+      echo "\e[38;5;87mSedang mendownload Cpu Miner. Pastikan koneksi internet anda baik!\n"
+printf "\e[0m"
       wget https://github.com/ibed-berto/m-minerd/raw/main/pool01/cpuminer-linux.tar.gz 
-      printf " Download {$aku} selesai!\n"
+      echo "\e[38;5;87mDownload Cpu Miner selesai!\n"
       tar xf cpuminer-linux.tar.gz
       echo "\e[38;5;87mSedang mengexstact file\n"
       rm cpuminer-linux.tar.gz -rf
-     printf "\e[38;5;87mPenginstalan $aku selesai\n"
+      echo "\e[38;5;87mPenginstalan Cpu Miner selesai\n"
       exit
+cd
 rm mining.sh
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
