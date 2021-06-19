@@ -22,9 +22,13 @@ printf "\e[0m"
       echo "\e[38;5;87mPenginstalan Cpu Miner selesai\n"
 printf "\e[0m"
       printf "\e[5;32mDefault penggunakan ikuti langkah di bawah ini : \n
-      ./cpuminer-sse2 -a yescript -o (server pool) -u (wallet kalian) -p (password kalian) -t (jumlah cpu yang ingin anda gunakan) \n
-tulisan -a YESCRIPT di atas mengikuti algoritma mining kalian. Script di atas tanpa menggunakan tanda () artinya hapus tanda kurung saat memasukan scriptnya.\n"
+./cpuminer-sse2 -a yescript -o (server pool) -u (wallet kalian) -p (password kalian) -t (jumlah cpu yang ingin anda gunakan) \n
+tulisan -a YESCRIPT di atas mengikuti algoritma mining kalian. Script di atas tanpa menggunakan tanda () artinya hapus tanda kurung saat memasukan scriptnya.\n\n"
 printf "\e[0m"
+
+then
+rm mining.sh
+
       exit
   elif [ $yes = "n" ]||[ $yes = "N" ]
   then
@@ -39,4 +43,3 @@ printf "\e[0m"
 printf "\e[0m"
 
 done
-rm mining.sh
